@@ -24,7 +24,12 @@ Each folder's README lists the Intune settings for its scripts.
 
 ## Running a script straight from GitHub
 
-Download the script to a temp file and run it with `-File`. Avoid
+Each folder's README has a ready-to-paste one-liner for every script:
+[Chrome](Chrome/README.md#running-from-github-one-liners),
+[DotNet8](DotNet8/README.md#running-from-github-one-liners).
+
+They all follow the same pattern: download the script to a temp file, then
+run it with `-File`. Avoid
 `irm ... | iex`: the scripts end with `exit`, which closes your PowerShell
 window under `iex`, and `#Requires -RunAsAdministrator` only works in a
 script file.
